@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+
 }
 
 h2 {
@@ -13,20 +14,19 @@ h2 {
   background-repeat: no-repeat;
   min-height: 950px;
   background-size: cover;
-
-
+min-width: none;
+position: static;
 }
 
 .front-page__content {
-  position: absolute;
+  position: relative;
   top: 500px;
-  left: 1000px;
+right: auto;
   color: white;
 }
 .front-page__content h1 {
   color: white;
 }
-
 .winter-jacket img {
   max-height: 350px;
 }
@@ -47,9 +47,11 @@ header {
   align-items: center;
   padding: 10px;
 }
+/* footer */
 footer {
   background-color: #0A3641;
   display: flex;
+  text-align: center;
 }
 
 footer > * { 
@@ -102,8 +104,8 @@ a {
 
 .winter-jacket {
   display: flex;
-
-
+  overflow: scroll;
+overflow-y: hidden;
   
 
 }
@@ -124,7 +126,8 @@ h1 {
 
 .summer-jacket{
   display: flex;
-
+  overflow: scroll;
+  overflow-y: hidden;
 }
 
 .summer-jacket > * {
