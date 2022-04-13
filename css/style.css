@@ -383,3 +383,9 @@ th:last-child {
   width: 20%;
   background-color: #0a3641;
 }
+
+.checkout-form {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
