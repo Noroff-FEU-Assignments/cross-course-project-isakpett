@@ -386,6 +386,29 @@ th:last-child {
 
 .checkout-form {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   gap: 15px;
+}
+.checkout-form-1 {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: #93aebf;
+}
+
+.form-first-name {
+  float: left;
+  margin-right: 20px;
+}
+input,
+label {
+  display: block;
+}
+.form-last-name {
+  float: left;
+}
+
+.form-column {
+  display: inline;
 }
