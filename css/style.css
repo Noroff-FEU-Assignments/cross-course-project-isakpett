@@ -205,7 +205,7 @@ footer p {
 }
 /* about us page */
 .about {
-  max-width: 1500px;
+  max-width: 1000px;
   margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -219,7 +219,7 @@ footer p {
 }
 .about-image-left img,
 .about-image-right img {
-  max-width: 725px;
+  max-width: 500px;
 }
 .about-text-right {
   grid-area: 1/2/3/3;
@@ -391,7 +391,7 @@ th:last-child {
   gap: 15px;
 }
 .checkout-form-1 {
-  max-width: 600px;
+  max-width: 410px;
   display: flex;
   flex-direction: column;
   background-color: #93aebf;
