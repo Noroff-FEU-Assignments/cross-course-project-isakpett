@@ -365,7 +365,7 @@ th:last-child {
 /* checkout-page */
 .checkout-page {
   max-width: 1000px;
-  margin: auto;
+  margin: 5px auto;
 }
 .progressive-bar {
   display: flex;
@@ -386,29 +386,97 @@ th:last-child {
 
 .checkout-form {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
   gap: 15px;
 }
 .checkout-form-1 {
   max-width: 410px;
   display: flex;
   flex-direction: column;
-  background-color: #93aebf;
-}
-
-.form-first-name {
-  float: left;
-  margin-right: 20px;
+  background-color: #c4c4c4;
+  border-radius: 5px;
 }
 input,
 label {
   display: block;
 }
+.form-first-name {
+  float: left;
+  margin-right: 20px;
+}
+
 .form-last-name {
   float: left;
 }
 
 .form-column {
   display: inline;
+}
+
+.checkout-info {
+  display: flex;
+  max-width: 410px;
+}
+
+/* order summary */
+
+:root {
+  --order-summary-img-size: 3.6em;
+  --order-summary-img-margin-right: var(--space-xs);
+}
+.order-summary {
+  background-color: #93aebf;
+  border-radius: 5px;
+}
+.order-summary__header {
+  border-radius: inherit;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-left: 15px;
+}
+
+.order-summary__footer {
+  border-radius: inherit;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.order-summary__item {
+  display: grid;
+  grid-template-columns: var(--order-summary-img-size) 1fr;
+  grid-gap: var(--order-summary-img-margin-right);
+  align-items: center;
+}
+
+.order-summary__img {
+  display: block;
+  width: var(--order-summary-img-size);
+  height: var(--order-summary-img-size);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: 0.2s;
+}
+.order-summary__img img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.order-summary__img:hover {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.order-summary-text {
+  gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.order-summary-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
