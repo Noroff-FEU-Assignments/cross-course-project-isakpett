@@ -54,59 +54,104 @@
         </div>
       </section>
     </header>
-    <main class="cart">
-      <h1>CART</h1>
-      <section class="cart-items">
-        <div>
-          <img
-            class="product-image"
-            src="./img/differnt/product1.jpg"
-            alt="winter-jacket"
-          />
-          <h2>winter jacket</h2>
-          <p>Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe</p>
-          <p>color: Size: Qty:</p>
-        </div>
-      </section>
-      <section class="cart-info">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>product name</th>
-              <th>Quantity</th>
-              <th>Subtotal</th>
-              <th>Discount</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="product-item">
-                  <a class="product-thumb" href="#"
-                    ><img class="¨product-thumb
-              " src="./img/differnt/product1.jpg" alt="product"
-                  /></a>
-                  <div class="product-info">
-                    <h4 class="product-title"><a href="#">winter-jacket</a></h4>
-                    <span><em>Size:</em>M</span>
-                    <span><em>Color</em>Green</span>
-                  </div>
-                </div>
-                <td class="text-center">
-                  <div class="count-input">
-                    <select name="qty" id="qty">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
-                  </div>
-                </td>
+    <main>
+      <div class="cart-page">
+        <table>
+          <tr>
+            <th>product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img
+                  class="cart-image"
+                  src="./img/differnt/cart-image.jpg"
+                  alt="winter-jacket"
+                />
+                <div class="product-info">
+                  <p>winter jacket</p>
+                  <small>price: 79$</small>
 
-              </td>
-            </tr>
-          </tbody>
+                  <a href=""
+                    ><img
+                      class="icon-remove"
+                      src="./img/icons/outline_close_black_24dp.png"
+                      alt="remove"
+                  /></a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>79$</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img
+                  class="cart-image"
+                  src="./img/differnt/cart-image.jpg"
+                  alt="winter-jacket"
+                />
+                <div class="product-info">
+                  <p>winter jacket</p>
+                  <small>price: 79$</small>
+                  <a href=""
+                    ><img
+                      class="icon-remove"
+                      src="./img/icons/outline_close_black_24dp.png"
+                      alt="remove"
+                  /></a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>79$</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img
+                  class="cart-image"
+                  src="./img/differnt/cart-image.jpg"
+                  alt="winter-jacket"
+                />
+                <div class="product-info">
+                  <p>winter jacket</p>
+                  <small>price: 79$</small>
+                  <a href=""
+                    ><img
+                      class="icon-remove"
+                      src="./img/icons/outline_close_black_24dp.png"
+                      alt="remove"
+                  /></a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>79$</td>
+          </tr>
         </table>
+      </div>
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>200$</td>
+          </tr>
+          <tr>
+            <td>tax</td>
+            <td>30$</td>
+          </tr>
+          <tr>
+            <td>total</td>
+            <td>200$</td>
+          </tr>
+        </table>
+      </div>
+      <section class="cta-button">
+        <a href="checkout-page.html" class="cta cta-big">CHECKOUT</a>
       </section>
     </main>
 
