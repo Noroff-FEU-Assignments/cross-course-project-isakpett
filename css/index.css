@@ -1,0 +1,58 @@
+.front-page {
+  background-image: url("../img/front-page.png");
+  background-repeat: no-repeat;
+  min-height: 950px;
+  background-size: cover;
+  min-width: 210px;
+  position: relative;
+}
+
+.front-page__content {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 210px;
+}
+.front-page__content h1 {
+  color: white;
+}
+
+.winter-jacket img {
+  max-height: 350px;
+}
+
+.summer-jacket img {
+  max-height: 350px;
+}
+
+.logo {
+  max-width: 300px;
+}
+
+.winter-jacket,
+.summer-jacket {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+  display: grid;
+
+  grid-template-rows: min-content;
+  height: fit-content;
+
+  position: relative;
+
+  margin: 5px auto;
+}
+.product {
+  padding: 20px;
+}
+.summer-jacket > * {
+  flex: 1;
+}
+
+.product img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}

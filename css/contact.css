@@ -1,0 +1,27 @@
+.contact {
+  max-width: 1000px;
+  margin: 50px auto;
+  margin: auto;
+  display: flex;
+  gap: 15px;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form {
+  flex: 1;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+.form-wrapper > * {
+  flex: 1;
+}

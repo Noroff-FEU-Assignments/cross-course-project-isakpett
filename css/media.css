@@ -1,0 +1,54 @@
+@media (min-width: 400px) {
+  .winter-jacket,
+  .summer-jacket {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 600px) {
+  .winter-jacket,
+  .summer-jacket {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-form {
+    min-width: 500px;
+  }
+
+  .product-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .progressive-border {
+    display: block;
+  }
+}
+
+@media (min-width: 800px) {
+  .winter-jacket,
+  .summer-jacket {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .contact {
+    flex-direction: row;
+  }
+
+  .about {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .checkout-form {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product-specific {
+    flex-direction: row;
+  }
+
+  .total-price {
+    width: 1000px;
+  }
+}
