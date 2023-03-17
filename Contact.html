@@ -39,10 +39,15 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img class="logo" src="./img/RainyDays_Logo.jpg" alt="raindays"
-      /></a>
-      <nav>
+      <a href="index.html">
+        <img class="logo" src="./img/RainyDays_Logo.jpg" alt="raindays" />
+      </a>
+      <button class="hamburger-menu" id="hamburger-menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <nav class="nav-main" id="nav-main">
         <ul class="navigator">
           <li><a href="shopall.html">Shop All</a></li>
           <li><a href="about.html">About Us</a></li>
@@ -51,18 +56,22 @@
       </nav>
       <section class="icons">
         <div>
-          <img
-            src="./img/search_black_24dp-(1).jpg"
-            class="icon"
-            alt="search"
-          />
+          <a href="search.html">
+            <img
+              src="./img/search_black_24dp-(1).jpg"
+              class="icon"
+              alt="search"
+            />
+          </a>
         </div>
         <div>
-          <img
-            src="./img/shopping_cart_black_24dp-(1).jpg"
-            alt="shopping cart"
-            class="icon"
-          />
+          <a href="cart.html">
+            <img
+              src="./img/shopping_cart_black_24dp-(1).jpg"
+              alt="shopping cart"
+              class="icon"
+            />
+          </a>
         </div>
         <div>
           <img
@@ -76,7 +85,7 @@
     <main>
       <h1>Contact</h1>
       <section class="contact">
-        <form method="post">
+        <form method="post" id="contact-form" onsubmit="handleSubmit(event)">
           <section class="form-wrapper">
             <div class="contact-form">
               <label for="name">Full Name</label>
@@ -107,6 +116,9 @@
           </p>
         </section>
       </section>
+      <div id="success-message">
+        <p>your message has been sent successfully</p>
+      </div>
     </main>
     <footer>
       <p>product</p>
@@ -114,6 +126,7 @@
       <p>support</p>
     </footer>
 
-    <script src="" async defer></script>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/validation.js"></script>
   </body>
 </html>

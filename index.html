@@ -25,10 +25,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Rainydays | home</title>
     <meta name="description" content="rainydays" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/media.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,42 +41,50 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img class="logo" src="./img/RainyDays_Logo.jpg" alt="raindays"
-      /></a>
-      <nav>
+      <a href="index.html">
+        <img class="logo" src="./img/RainyDays_Logo.jpg" alt="raindays" />
+      </a>
+      <button class="hamburger-menu" id="hamburger-menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <nav class="nav-main" id="nav-main">
         <ul class="navigator">
           <li><a href="shopall.html">Shop All</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="Contact.html">Contact</a></li>
         </ul>
+        <section class="icons">
+          <div>
+            <a href="search.html">
+              <img
+                src="./img/search_black_24dp-(1).jpg"
+                class="icon"
+                alt="search"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="cart.html">
+              <img
+                src="./img/shopping_cart_black_24dp-(1).jpg"
+                alt="shopping cart"
+                class="icon"
+              />
+            </a>
+          </div>
+          <div>
+            <img
+              src="./img/account_circle_black_24dp-(1).jpg"
+              alt="account"
+              class="icon"
+            />
+          </div>
+        </section>
       </nav>
-      <section class="icons">
-        <div>
-          <a href="search.html">
-            <img
-              src="./img/search_black_24dp-(1).jpg"
-              class="icon"
-              alt="search"
-          /></a>
-        </div>
-        <div>
-          <a href="cart.html">
-            <img
-              src="./img/shopping_cart_black_24dp-(1).jpg"
-              alt="shopping cart"
-              class="icon"
-          /></a>
-        </div>
-        <div>
-          <img
-            src="./img/account_circle_black_24dp-(1).jpg"
-            alt="account"
-            class="icon"
-          />
-        </div>
-      </section>
     </header>
+
     <main class="front-page__">
       <section class="front-page">
         <div class="front-page__content">
@@ -184,6 +194,6 @@
       <p>support</p>
     </footer>
 
-    <script src="" async defer></script>
+    <script src="javascript/main.js"></script>
   </body>
 </html>

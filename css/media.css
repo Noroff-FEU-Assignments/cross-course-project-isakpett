@@ -43,12 +43,54 @@
   }
 }
 
-@media (min-width: 1000px) {
-  .product-specific {
-    flex-direction: row;
+@media screen and (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transform: translateY(-100%);
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
   }
 
-  .total-price {
-    width: 1000px;
+  .nav-main.active {
+    transform: translateY(0);
+  }
+
+  .nav-main.active {
+    display: block;
+  }
+
+  .navigator {
+    flex-direction: column;
+  }
+
+  .navigator li {
+    margin: 10px 0;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    z-index: 1001;
+  }
+  .nav-main .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+  }
+  .nav-main .icons > div {
+    margin-bottom: 10px;
+  }
+
+  .product-specific {
+    flex-direction: column;
   }
 }

@@ -54,7 +54,7 @@ td a {
 
 .total-price {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 1000px;
   margin: 20px auto;
   width: 100%;
@@ -67,6 +67,7 @@ td a {
 
 td:last-child {
   text-align: right;
+  padding-right: 15px;
 }
 th:last-child {
   text-align: right;

@@ -87,18 +87,28 @@
           <section class="form-container">
             <div class="checkout-form-1">
               <label for="cardholder-name">*Cardholder name</label>
-              <input type="text" name="cardholder-name" id="cardholder-name" />
+              <input
+                type="text"
+                required
+                name="cardholder-name"
+                id="cardholder-name"
+              />
               <label for="card-number">*Card number</label>
-              <input type="text" name="card-number" id="card-number" />
+              <input type="text" required name="card-number" id="card-number" />
 
               <div>
                 <div class="form-first-name">
                   <label for="expiry-date">*Expiry Date</label>
-                  <input type="date" name="expiry-date" id="expiry-date" />
+                  <input
+                    type="date"
+                    required
+                    name="expiry-date"
+                    id="expiry-date"
+                  />
                 </div>
                 <div class="form-last-name">
                   <label for="cvc-cvv">*CVC/CVV</label>
-                  <input type="number" name="cvc-cvv" id="cvc-cvv" />
+                  <input type="number" required name="cvc-cvv" id="cvc-cvv" />
                 </div>
               </div>
 
@@ -183,5 +193,6 @@
       <p>community</p>
       <p>support</p>
     </footer>
+    <script src="javascript/billing.js"></script>
   </body>
 </html>
