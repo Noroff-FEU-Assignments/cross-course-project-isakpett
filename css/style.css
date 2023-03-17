@@ -4,18 +4,30 @@
   --main-color: #0a3641;
   --secondary-color: #93aebf;
 }
-
+html {
+  height: 100%;
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0px;
-  min-height: 100vh;
+  min-height: 100%;
   box-sizing: border-box;
   padding: 0;
+  flex-direction: column;
 }
+main {
+  flex: 1;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 
+  flex-shrink: 0;
+}
 h2 {
   color: var(--main-color);
-  font-size: 20px;
+  font-size: 26px;
 }
 
 h1 {
@@ -30,7 +42,7 @@ h3,
 a,
 label,
 i {
-  font-size: 17px;
+  font-size: 24px;
 
   font-family: quasimoda, sans-serif;
 
@@ -88,7 +100,7 @@ header {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .icons {

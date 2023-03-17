@@ -93,4 +93,11 @@
   .product-specific {
     flex-direction: column;
   }
+  .logo {
+    max-width: 200px;
+  }
+  .winter-jacket,
+  .summer-jacket {
+    max-width: 1000px;
+  }
 }
