@@ -2,16 +2,21 @@
 <html>
   <head>
     <!-- Hotjar Tracking Code for my site -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3395614,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3395614, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
     <script
       src="https://kit.fontawesome.com/9710d902f0.js"
       crossorigin="anonymous"
@@ -34,39 +39,48 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img class="logo" src="./img/RainyDays_Logo.jpg" alt="raindays"
-      /></a>
-      <nav>
+      <a href="index.html">
+        <img class="logo" src="./img/RainyDays_Logo.jpg" alt="raindays" />
+      </a>
+      <button class="hamburger-menu" id="hamburger-menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <nav class="nav-main" id="nav-main">
         <ul class="navigator">
           <li><a href="shopall.html">Shop All</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="Contact.html">Contact</a></li>
         </ul>
+        <section class="icons">
+          <div>
+            <a href="search.html">
+              <img
+                src="./img/search_black_24dp-(1).jpg"
+                class="icon"
+                alt="search"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="cart.html">
+              <img
+                src="./img/shopping_cart_black_24dp-(1).jpg"
+                alt="shopping cart"
+                class="icon"
+              />
+            </a>
+          </div>
+          <div>
+            <img
+              src="./img/account_circle_black_24dp-(1).jpg"
+              alt="account"
+              class="icon"
+            />
+          </div>
+        </section>
       </nav>
-      <section class="icons">
-        <div>
-          <img
-            src="./img/search_black_24dp-(1).jpg"
-            class="icon"
-            alt="search"
-          />
-        </div>
-        <div>
-          <img
-            src="./img/shopping_cart_black_24dp-(1).jpg"
-            alt="shopping cart"
-            class="icon"
-          />
-        </div>
-        <div>
-          <img
-            src="./img/account_circle_black_24dp-(1).jpg"
-            alt="account"
-            class="icon"
-          />
-        </div>
-      </section>
     </header>
     <main class="product-page">
       <section class="product-specific">
@@ -132,35 +146,40 @@
             </div>
           </section>
         </section>
-        </section>
-        <img class="product-description-img"
+      </section>
+      <section class="product-description">
+        <img
+          class="product-description-img"
           src="./img/jonathan-gallegos-HoMqP_ldh-s-unsplash.jpg"
           alt="snowy mountains"
         />
-        <h2 class="text-center">This is an example of a sub header</h2>
-        <p>
-          Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe
-          liatque porepera dolorporum que del et est et que et anis cum nos
-          volorpor aut a doluptatem dolupta temqui aut demolup tibuscitem. Ita
-          quia cori dolore plicide pore con ni ommolorrum quae optatent quam
-          dolorum facea sequam nam facipsum quo bearchi citiunt esendae vel
-          minus sunt, nit eatqui num estiisi nctios por mi, que volore voluptas
-          eum solo optatquam, aut fuga. Fuga. Hendit maxim hitatibusNequi omnit
-          quasit eost aut fugit ut estium susam fuga. Ficaepe liatque porepera
-          dolorporum que del et est et que et anis cum nos volorpor aut a
-          doluptatem dolupta temqui aut demolup tibuscitem. Ita quia cori dolore
-          plicide pore con ni ommolorrum quae optatent quam dolorum facea sequam
-          nam facipsum quo bearchi citiunt esendae vel minus sunt, nit eatqui
-          num estiisi nctios por mi, que volore voluptas eum solo optatquam, aut
-          fuga. Fuga. Hendit maxim hitatibusNequi omnit quasit eost aut fugit ut
-          estium susam fuga. Ficaepe liatque porepera dolorporum que del et est
-          et que et anis cum nos volorpor aut a doluptatem dolupta temqui aut
-          demolup tibuscitem. Ita quia cori dolore plicide pore con ni
-          ommolorrum quae optatent quam dolorum facea sequam nam facipsum quo
-          bearchi citiunt esendae vel minus sunt, nit eatqui num estiisi nctios
-          por mi, que volore voluptas eum solo optatquam, aut fuga. Fuga. Hendit
-          maxim hitatibus
-        </p>
+        <div>
+          <h2 class="text-center">This is an example of a sub header</h2>
+          <p>
+            Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe
+            liatque porepera dolorporum que del et est et que et anis cum nos
+            volorpor aut a doluptatem dolupta temqui aut demolup tibuscitem. Ita
+            quia cori dolore plicide pore con ni ommolorrum quae optatent quam
+            dolorum facea sequam nam facipsum quo bearchi citiunt esendae vel
+            minus sunt, nit eatqui num estiisi nctios por mi, que volore
+            voluptas eum solo optatquam, aut fuga. Fuga. Hendit maxim
+            hitatibusNequi omnit quasit eost aut fugit ut estium susam fuga.
+            Ficaepe liatque porepera dolorporum que del et est et que et anis
+            cum nos volorpor aut a doluptatem dolupta temqui aut demolup
+            tibuscitem. Ita quia cori dolore plicide pore con ni ommolorrum quae
+            optatent quam dolorum facea sequam nam facipsum quo bearchi citiunt
+            esendae vel minus sunt, nit eatqui num estiisi nctios por mi, que
+            volore voluptas eum solo optatquam, aut fuga. Fuga. Hendit maxim
+            hitatibusNequi omnit quasit eost aut fugit ut estium susam fuga.
+            Ficaepe liatque porepera dolorporum que del et est et que et anis
+            cum nos volorpor aut a doluptatem dolupta temqui aut demolup
+            tibuscitem. Ita quia cori dolore plicide pore con ni ommolorrum quae
+            optatent quam dolorum facea sequam nam facipsum quo bearchi citiunt
+            esendae vel minus sunt, nit eatqui num estiisi nctios por mi, que
+            volore voluptas eum solo optatquam, aut fuga. Fuga. Hendit maxim
+            hitatibus
+          </p>
+        </div>
       </section>
     </main>
 
@@ -170,6 +189,6 @@
       <p>support</p>
     </footer>
 
-    <script src="" async defer></script>
+    <script src="javascript/main.js"></script>
   </body>
 </html>

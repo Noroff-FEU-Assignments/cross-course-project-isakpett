@@ -39,39 +39,48 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img class="logo" src="./img/RainyDays_Logo.jpg" alt="raindays"
-      /></a>
-      <nav>
+      <a href="index.html">
+        <img class="logo" src="./img/RainyDays_Logo.jpg" alt="raindays" />
+      </a>
+      <button class="hamburger-menu" id="hamburger-menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <nav class="nav-main" id="nav-main">
         <ul class="navigator">
           <li><a href="shopall.html">Shop All</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="Contact.html">Contact</a></li>
         </ul>
+        <section class="icons">
+          <div>
+            <a href="search.html">
+              <img
+                src="./img/search_black_24dp-(1).jpg"
+                class="icon"
+                alt="search"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="cart.html">
+              <img
+                src="./img/shopping_cart_black_24dp-(1).jpg"
+                alt="shopping cart"
+                class="icon"
+              />
+            </a>
+          </div>
+          <div>
+            <img
+              src="./img/account_circle_black_24dp-(1).jpg"
+              alt="account"
+              class="icon"
+            />
+          </div>
+        </section>
       </nav>
-      <section class="icons">
-        <div>
-          <img
-            src="./img/search_black_24dp-(1).jpg"
-            class="icon"
-            alt="search"
-          />
-        </div>
-        <div>
-          <img
-            src="./img/shopping_cart_black_24dp-(1).jpg"
-            alt="shopping cart"
-            class="icon"
-          />
-        </div>
-        <div>
-          <img
-            src="./img/account_circle_black_24dp-(1).jpg"
-            alt="account"
-            class="icon"
-          />
-        </div>
-      </section>
     </header>
     <main>
       <div class="cart-page">
@@ -91,8 +100,7 @@
                 />
                 <div class="product-info">
                   <p>winter jacket</p>
-                  <small>price: 79$</small>
-
+                  <small data-price="40">price: $40</small>
                   <a href=""
                     ><img
                       class="icon-remove"
@@ -102,8 +110,8 @@
                 </div>
               </div>
             </td>
-            <td><input type="number" value="1" /></td>
-            <td>79$</td>
+            <td><input min="0" type="number" value="1" id="item1" /></td>
+            <td data-price="40 ">$40</td>
           </tr>
           <tr>
             <td>
@@ -115,7 +123,7 @@
                 />
                 <div class="product-info">
                   <p>winter jacket</p>
-                  <small>price: 79$</small>
+                  <small data-price="39">price: $39</small>
                   <a href=""
                     ><img
                       class="icon-remove"
@@ -125,8 +133,8 @@
                 </div>
               </div>
             </td>
-            <td><input type="number" value="1" /></td>
-            <td>79$</td>
+            <td><input min="0" type="number" value="1" id="item2" /></td>
+            <td data-price="39">$39</td>
           </tr>
           <tr>
             <td>
@@ -138,7 +146,7 @@
                 />
                 <div class="product-info">
                   <p>winter jacket</p>
-                  <small>price: 79$</small>
+                  <small data-price="79">price: $79</small>
                   <a href=""
                     ><img
                       class="icon-remove"
@@ -148,8 +156,8 @@
                 </div>
               </div>
             </td>
-            <td><input type="number" value="1" /></td>
-            <td>79$</td>
+            <td><input min="0" type="number" value="1" id="item3" /></td>
+            <td data-price="79">$79</td>
           </tr>
         </table>
       </div>
@@ -157,15 +165,15 @@
         <table>
           <tr>
             <td>Subtotal</td>
-            <td>200$</td>
+            <td class="subtotal-cell"></td>
           </tr>
           <tr>
             <td>tax</td>
-            <td>30$</td>
+            <td class="tax-cell"></td>
           </tr>
           <tr>
             <td>total</td>
-            <td>200$</td>
+            <td class="total-cell"></td>
           </tr>
         </table>
       </div>
@@ -179,6 +187,7 @@
       <p>community</p>
       <p>support</p>
     </footer>
-    <script src="javascript/cart.js"></script>
+    <script src="javascript/cart-form.js"></script>
+    <script src="javascript/main.js"></script>
   </body>
 </html>

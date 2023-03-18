@@ -53,34 +53,34 @@
           <li><a href="about.html">About Us</a></li>
           <li><a href="Contact.html">Contact</a></li>
         </ul>
+        <section class="icons">
+          <div>
+            <a href="search.html">
+              <img
+                src="./img/search_black_24dp-(1).jpg"
+                class="icon"
+                alt="search"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="cart.html">
+              <img
+                src="./img/shopping_cart_black_24dp-(1).jpg"
+                alt="shopping cart"
+                class="icon"
+              />
+            </a>
+          </div>
+          <div>
+            <img
+              src="./img/account_circle_black_24dp-(1).jpg"
+              alt="account"
+              class="icon"
+            />
+          </div>
+        </section>
       </nav>
-      <section class="icons">
-        <div>
-          <a href="search.html">
-            <img
-              src="./img/search_black_24dp-(1).jpg"
-              class="icon"
-              alt="search"
-            />
-          </a>
-        </div>
-        <div>
-          <a href="cart.html">
-            <img
-              src="./img/shopping_cart_black_24dp-(1).jpg"
-              alt="shopping cart"
-              class="icon"
-            />
-          </a>
-        </div>
-        <div>
-          <img
-            src="./img/account_circle_black_24dp-(1).jpg"
-            alt="account"
-            class="icon"
-          />
-        </div>
-      </section>
     </header>
     <main>
       <h1>Contact</h1>
@@ -88,14 +88,20 @@
         <form method="post" id="contact-form" onsubmit="handleSubmit(event)">
           <section class="form-wrapper">
             <div class="contact-form">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="name" />
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" />
-              <label for="Message">Message</label>
+              <label class="visually-hidden" for="name">Full Name</label>
+              <input placeholder="Name" type="text" id="name" name="name" />
+              <label class="visually-hidden" for="email">Email</label>
+              <input placeholder="Email" type="email" id="email" name="email" />
+              <label class="visually-hidden" for="subject">Subject</label>
+              <input
+                placeholder="Subject"
+                type="text"
+                id="subject"
+                name="subject"
+              />
+              <label class="visually-hidden" for="Message">Message</label>
               <textarea
+                placeholder="Message"
                 name="message"
                 id="message"
                 cols="30"

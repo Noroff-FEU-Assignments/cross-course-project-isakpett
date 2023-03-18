@@ -30,7 +30,6 @@ table {
 th {
   text-align: left;
   padding: 5px;
-  background-color: var(--secondary-color);
 
   font-weight: bolder;
 }
@@ -79,4 +78,14 @@ th:last-child {
   justify-content: center;
 
   max-width: 1000px;
+}
+
+input[type="number"] {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: center;
+  width: 40px;
 }

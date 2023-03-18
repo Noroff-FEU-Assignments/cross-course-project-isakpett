@@ -39,39 +39,48 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img class="logo" src="./img/RainyDays_Logo.jpg" alt="raindays"
-      /></a>
-      <nav>
+      <a href="index.html">
+        <img class="logo" src="./img/RainyDays_Logo.jpg" alt="raindays" />
+      </a>
+      <button class="hamburger-menu" id="hamburger-menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <nav class="nav-main" id="nav-main">
         <ul class="navigator">
           <li><a href="shopall.html">Shop All</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="Contact.html">Contact</a></li>
         </ul>
+        <section class="icons">
+          <div>
+            <a href="search.html">
+              <img
+                src="./img/search_black_24dp-(1).jpg"
+                class="icon"
+                alt="search"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="cart.html">
+              <img
+                src="./img/shopping_cart_black_24dp-(1).jpg"
+                alt="shopping cart"
+                class="icon"
+              />
+            </a>
+          </div>
+          <div>
+            <img
+              src="./img/account_circle_black_24dp-(1).jpg"
+              alt="account"
+              class="icon"
+            />
+          </div>
+        </section>
       </nav>
-      <section class="icons">
-        <div>
-          <img
-            src="./img/search_black_24dp-(1).jpg"
-            class="icon"
-            alt="search"
-          />
-        </div>
-        <div>
-          <img
-            src="./img/shopping_cart_black_24dp-(1).jpg"
-            alt="shopping cart"
-            class="icon"
-          />
-        </div>
-        <div>
-          <img
-            src="./img/account_circle_black_24dp-(1).jpg"
-            alt="account"
-            class="icon"
-          />
-        </div>
-      </section>
     </header>
     <main class="billing-page">
       <section class="progressive-bar">
@@ -86,20 +95,34 @@
         <form method="post">
           <section class="form-container">
             <div class="checkout-form-1">
-              <label for="cardholder-name">*Cardholder name</label>
+              <label class="visually-hidden" for="cardholder-name"
+                >*Cardholder name</label
+              >
               <input
+                placeholder="Cardholder Name"
                 type="text"
                 required
                 name="cardholder-name"
                 id="cardholder-name"
               />
-              <label for="card-number">*Card number</label>
-              <input type="text" required name="card-number" id="card-number" />
+              <label class="visually-hidden" for="card-number"
+                >*Card number</label
+              >
+              <input
+                placeholder="Card Number"
+                type="text"
+                required
+                name="card-number"
+                id="card-number"
+              />
 
               <div>
                 <div class="form-first-name">
-                  <label for="expiry-date">*Expiry Date</label>
+                  <label class="visually-hidden" for="expiry-date"
+                    >*Expiry Date</label
+                  >
                   <input
+                    placeholder="Expiry Date"
                     type="date"
                     required
                     name="expiry-date"
@@ -107,8 +130,14 @@
                   />
                 </div>
                 <div class="form-last-name">
-                  <label for="cvc-cvv">*CVC/CVV</label>
-                  <input type="number" required name="cvc-cvv" id="cvc-cvv" />
+                  <label class="visually-hidden" for="cvc-cvv">*CVC/CVV</label>
+                  <input
+                    placeholder="CVC/CVV"
+                    type="number"
+                    required
+                    name="cvc-cvv"
+                    id="cvc-cvv"
+                  />
                 </div>
               </div>
 
@@ -193,6 +222,7 @@
       <p>community</p>
       <p>support</p>
     </footer>
+    <script src="javascript/main.js"></script>
     <script src="javascript/billing.js"></script>
   </body>
 </html>

@@ -8,6 +8,7 @@ html {
   height: 100%;
 }
 body {
+  background-color: #f5f5f5;
   font-family: "Roboto", sans-serif;
   margin: 0px;
   min-height: 100%;
@@ -18,13 +19,7 @@ body {
 main {
   flex: 1;
 }
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 
-  flex-shrink: 0;
-}
 h2 {
   color: var(--main-color);
   font-size: 26px;
@@ -42,7 +37,7 @@ h3,
 a,
 label,
 i {
-  font-size: 24px;
+  font-size: 19px;
 
   font-family: quasimoda, sans-serif;
 
@@ -55,12 +50,22 @@ a {
   text-decoration: none !important;
   color: var(--main-color);
 }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
 .text-center {
   text-align: center;
 }
 .cta {
   background-color: var(--main-color);
-  font-size: 1em;
+  font-size: 17px;
   text-align: center;
   border-radius: 10px;
   align-items: center;
@@ -74,10 +79,15 @@ a {
   color: white;
   cursor: pointer;
 }
+
 .cta:hover {
-  background-color: var(--secondary-color);
+  background-color: #ffff;
   color: var(--main-color);
   border: #0a3641 solid 1px;
+}
+
+.cta p {
+  font-size: 19px;
 }
 
 header {

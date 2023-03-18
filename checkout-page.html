@@ -39,39 +39,48 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img class="logo" src="./img/RainyDays_Logo.jpg" alt="raindays"
-      /></a>
-      <nav>
+      <a href="index.html">
+        <img class="logo" src="./img/RainyDays_Logo.jpg" alt="raindays" />
+      </a>
+      <button class="hamburger-menu" id="hamburger-menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <nav class="nav-main" id="nav-main">
         <ul class="navigator">
           <li><a href="shopall.html">Shop All</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="Contact.html">Contact</a></li>
         </ul>
+        <section class="icons">
+          <div>
+            <a href="search.html">
+              <img
+                src="./img/search_black_24dp-(1).jpg"
+                class="icon"
+                alt="search"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="cart.html">
+              <img
+                src="./img/shopping_cart_black_24dp-(1).jpg"
+                alt="shopping cart"
+                class="icon"
+              />
+            </a>
+          </div>
+          <div>
+            <img
+              src="./img/account_circle_black_24dp-(1).jpg"
+              alt="account"
+              class="icon"
+            />
+          </div>
+        </section>
       </nav>
-      <section class="icons">
-        <div>
-          <img
-            src="./img/search_black_24dp-(1).jpg"
-            class="icon"
-            alt="search"
-          />
-        </div>
-        <div>
-          <img
-            src="./img/shopping_cart_black_24dp-(1).jpg"
-            alt="shopping cart"
-            class="icon"
-          />
-        </div>
-        <div>
-          <img
-            src="./img/account_circle_black_24dp-(1).jpg"
-            alt="account"
-            class="icon"
-          />
-        </div>
-      </section>
     </header>
     <main class="checkout-page">
       <section class="progressive-bar">
@@ -88,30 +97,72 @@
             <div class="checkout-form-1">
               <div class="form-name">
                 <div class="form-first-name">
-                  <label for="name">*First Name</label>
-                  <input type="text" id="name" name="first-name" />
+                  <label class="visually-hidden" for="name">*First Name</label>
+                  <input
+                    placeholder="First Name"
+                    type="text"
+                    id="name"
+                    name="first-name"
+                  />
                 </div>
                 <div class="form-last-name">
-                  <label for="name">*Last Name</label>
-                  <input type="text" name="name" id="last-name" />
+                  <label class="visually-hidden" for="name">*Last Name</label>
+                  <input
+                    placeholder="Last Name"
+                    type="text"
+                    name="name"
+                    id="last-name"
+                  />
                 </div>
               </div>
-              <label for="email">*Email</label>
-              <input type="email" required id="email" name="email" />
-              <label for="phone">*phone</label>
-              <input type="tel" required id="phone" name="phone" />
-              <label for="company">company</label>
-              <input type="text" id="company" name="company" />
-              <label for="adress">*Address</label>
-              <input type="text" required id="address" name="address" />
-              <div>
+              <label for="email" class="visually-hidden">*Email</label>
+              <input
+                type="email"
+                placeholder="email"
+                required
+                id="email"
+                name="email"
+              />
+              <label for="phone" class="visually-hidden">*phone</label>
+              <input
+                type="tel"
+                placeholder="phone"
+                required
+                id="phone"
+                name="phone"
+              />
+              <label class="visually-hidden" for="company">company</label>
+              <input
+                type="text"
+                placeholder="company"
+                id="company"
+                name="company"
+              />
+              <label class="visually-hidden" for="adress">*Address</label>
+              <input
+                type="text"
+                placeholder="address"
+                required
+                id="address"
+                name="address"
+              />
+              <div class="form-name">
                 <div class="form-first-name">
-                  <label for="city">*City</label>
-                  <input type="text" required name="city" id="city" />
+                  <label class="visually-hidden" for="city">*City</label>
+                  <input
+                    type="text"
+                    placeholder="city"
+                    required
+                    name="city"
+                    id="city"
+                  />
                 </div>
                 <div class="form-last-name">
-                  <label for="postal-code">*Postal code</label>
+                  <label class="visually-hidden" for="postal-code"
+                    >*Postal code</label
+                  >
                   <input
+                    placeholder="postal-code"
                     type="text"
                     required
                     name="postal-code"
@@ -119,8 +170,14 @@
                   />
                 </div>
               </div>
-              <label for="country">*country</label>
-              <input type="text" required name="country" id="country" />
+              <label class="visually-hidden" for="country">*country</label>
+              <input
+                type="text"
+                placeholder="country"
+                required
+                name="country"
+                id="country"
+              />
 
               <a href="billing.html" class="cta">BILLING</a>
             </div>
@@ -193,6 +250,7 @@
       <p>community</p>
       <p>support</p>
     </footer>
+    <script src="javascript/main.js"></script>
     <script src="javascript/cart-form.js"></script>
   </body>
 </html>

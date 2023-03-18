@@ -26,6 +26,10 @@
   display: flex;
   justify-content: center;
 }
+.form-name {
+  display: flex;
+  padding-top: 15px;
+}
 
 .checkout-form {
   display: flex;
@@ -36,10 +40,11 @@
   margin: auto;
 }
 .checkout-form-1 {
+  padding-top: 15px;
   max-width: 410px;
   display: flex;
   flex-direction: column;
-  background-color: #c4c4c4;
+  background-color: #ffff;
   border-radius: 5px;
 }
 input,
@@ -102,10 +107,15 @@ label {
   justify-content: stretch;
 }
 /* order summary */
+.order-summary header {
+  background-color: #ffff;
+}
 
 .order-summary {
-  background-color: #d4d8db;
+  padding: 10px;
+  background-color: #ffff;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 .order-summary__header {
   margin-left: 15px;
@@ -155,6 +165,7 @@ label {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 25px;
 }
 
 .order-summary-container {
