@@ -87,7 +87,7 @@
 .email-signup {
   padding: 20px;
   height: 100px;
-  background-color: #ffff;
+  background-color: #eaeaea;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,25 +99,62 @@
 .sign-up-form {
   display: flex;
 }
-.sign-up-cta a {
+.sign-up-cta {
   height: 40px;
   margin: 0;
 }
 
-.signup-feedback {
-  display: none;
-  margin-top: 20px;
-}
-
-.signup-feedback p {
-  color: green;
-  font-weight: bold;
-}
-
-.signup-error {
-  color: red;
-}
-
 .show-feedback {
   display: block;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.message p {
+  text-decoration: underline;
+}
+.loader-container {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  display: none;
+}
+svg {
+  width: 3.25em;
+  transform-origin: center;
+  animation: rotate4 2s linear infinite;
+}
+circle {
+  fill: none;
+  stroke: hsl(214, 97%, 59%);
+  stroke-width: 2;
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: dash4 1.5s ease-in-out infinite;
+}
+@keyframes rotate4 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash4 {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dashoffset: -125px;
+  }
 }

@@ -1,7 +1,24 @@
 @media (min-width: 400px) {
   .winter-jacket,
   .summer-jacket {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .product img {
+    height: 150px;
+  }
+  .winter-jacket,
+  .summer-jacket {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+  }
+  h2 {
+    font-size: 19px;
+    font-weight: normal;
+  }
+  p {
+    font-size: 15px;
   }
 }
 @media (min-width: 600px) {
